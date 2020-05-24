@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+​
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+​
+    <title>1주차 과제 - 원페이지 쇼핑몰</title>
+    <script>
+      function msgbox() {
+        alert("주문이 완료되었습니다!");
+      }
+    </script>
+​
+    <!-- 구글폰트 -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap"
+      rel="stylesheet"
+    />
+​
+    <!-- style -->
+    <style type="text/css">
+      * {
+        font-family: "Do Hyeon", sans-serif;
+        /* font-size: 10px; */
+      }
+      .image-title {
+        margin: 20px auto;
+        width: 800px;
+        /* font-size: 30px; */
+      }
+      .image-subtitle {
+        margin: 20px auto;
+        width: 800px;
+        /* font-size: 30px; */
+      }
+      .image-body {
+        margin: 20px auto;
+        width: 800px;
+        /* font-size: 10px; */
+      }
+      .form-group {
+        margin: 20px auto;
+        width: 800px;
+        /* font-size: 10px;  */
+      }
+      .my-form {
+        padding: 0 100px;
+      }
+      .my-table {
+        width: 100%;
+      }
+    </style>
+  </head>
+​
+  <body>
+    <div class="container">
+      <div class="py-5 text-center">
+        <img
+          class="d-block mx-auto mb-4"
+          src="https://www.mecca.com.au/on/demandware.static/-/Sites-mecca-online-catalog/default/dw67a75834/product/jomalo/hr/i-035289-pear-and-freesia-100ml-2-940.jpg"
+          alt=""
+          width="400"
+          height="400"
+        />
+​
+        <div class="image-body">
+          <h5 class="image-title">
+            조말론 잉글리쉬 페어 앤 프리지아&nbsp;&nbsp;<small
+              ><small>가격 : 168,000원 (100ml)</small></small
+            >
+          </h5>
+          <h6 class="image-subtitle mb-2 text-muted">향에 대한 소개글</h6>
+          <p class="image-text">
+            은은하면서 신선하고 감미로운 향.감미롭고 특별한 향이 느껴집니다.
+            부드럽고 감미로운 향을 부여하는 잉글리쉬 페어 앤 프리지아는 가을의
+            정수라 할 수 있습니다. 화이트 프리지아 부케향에 이제 막 익은 배의
+            신선함을 입히고, 호박, 파출리, 우디향으로 은은함을 더했습니다.
+          </p>
+        </div>
+        <form class="form my-form">
+          <table class="my-table">
+            <tr>
+              <td><label for="inputordername">주문자 이름</label></td>
+              <td>
+                <input
+                  type="name"
+                  id="inputordername"
+                  class="form-control"
+                  aria-describedby="ordernameHelpInline"
+                />
+                <small id="ordernameHelpInline" class="text-muted">
+                  성과 이름을 모두 기입하세요.
+                </small>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="orderquantity">수량</label></td>
+              <td>
+                <select class="form-control" id="orderquantity">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+​
+                <small id="orderquantityHelpInline" class="text-muted">
+                  원하는 수량을 선택하세요. (최대 5개까지 구매 가능)
+                </small>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="inputaddress">주소</label></td>
+              <td>
+                <input
+                  type="address"
+                  id="inputaddress"
+                  class="form-control"
+                  aria-describedby="addressHelpInline"
+                />
+                <small id="addressHelpInline" class="text-muted">
+                  도로명 주소로 기입하세요.
+                </small>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="inputphonenumber">전화번호</label></td>
+              <td>
+                <input
+                  type="name"
+                  id="inputphonenumber"
+                  class="form-control"
+                  aria-describedby="phonenumberHelpInline"
+                />
+                <small id="phonenumberHelpInline" class="text-muted">
+                  예: 010-2934-2707.
+                </small>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <button type="button" onclick="msgbox()" class="btn btn-lg">
+                  주문하기
+                </button>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
